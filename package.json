@@ -1,0 +1,16 @@
+{
+  "name": "typescript-intro",
+  "version": "1.0.0",
+  "description": "Learn basic of typescript",
+  "main": "index.js",
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  },
+  "scripts": {
+    "initTSC": "typescript --init",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
