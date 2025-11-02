@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "description": "Learn basic of typescript",
   "main": "index.js",
+  "type": "module",
   "devDependencies": {
     "@angular-eslint/eslint-plugin": "^20.5.0",
+    "@types/express": "^5.0.5",
+    "@types/node": "^24.9.2",
     "@typescript-eslint/eslint-plugin": "^8.46.2",
     "@typescript-eslint/parser": "^8.46.2",
     "eslint": "^9.39.0",
@@ -21,13 +24,16 @@
     "eslint-plugin-vue": "^10.5.1",
     "eslint-plugin-yml": "^1.19.0",
     "prettier": "^3.6.2",
+    "ts-node": "^10.9.2",
     "typescript": "^5.9.3"
   },
   "scripts": {
-    "initTSC": "typescript --init",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "tsc && node ./dist/server.js"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
 }
