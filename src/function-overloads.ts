@@ -20,4 +20,4 @@ const dataEntries = {
     "abc": false
 } satisfies Record<string, number | boolean>
 
-dataEntries.entry3 = 1
+// dataEntries.entry3 = 1
