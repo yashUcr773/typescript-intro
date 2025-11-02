@@ -10,6 +10,7 @@
     "@types/node": "^24.9.2",
     "@typescript-eslint/eslint-plugin": "^8.46.2",
     "@typescript-eslint/parser": "^8.46.2",
+    "concurrently": "^9.2.1",
     "eslint": "^9.39.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-docker": "^0.1.0",
@@ -23,12 +24,14 @@
     "eslint-plugin-unused-imports": "^4.3.0",
     "eslint-plugin-vue": "^10.5.1",
     "eslint-plugin-yml": "^1.19.0",
+    "nodemon": "^3.1.10",
     "prettier": "^3.6.2",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3"
   },
   "scripts": {
-    "start": "tsc && node ./dist/server.js"
+    "start": "tsc && node ./dist/server.js",
+    "dev": "concurrently \" tsc -w \" \" nodemon ./dist/server.js --watch \" "
   },
   "keywords": [],
   "author": "",

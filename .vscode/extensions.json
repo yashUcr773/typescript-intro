@@ -12,6 +12,7 @@
         "esbenp.prettier-vscode",
         "bradlc.vscode-tailwindcss",
         "chakrounanas.turbo-console-log",
-        "vue.volar"
+        "vue.volar",
+        "humao.rest-client"
     ],
 }
