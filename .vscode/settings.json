@@ -1,35 +1,33 @@
 {
-    // --- General formatting ---
+    // --- Formatting ---
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    // --- Let ESLint fix structural style (like blank lines) ---
+    // --- ESLint auto-fix on save ---
     "editor.codeActionsOnSave": {
-        "source.fixAll": "always",
-        "source.fixAll.eslint": "always"
+        "source.fixAll": true,
+        "source.fixAll.eslint": true
     },
-    // --- Make sure ESLint runs for these file types ---
+    // --- Files ESLint should validate ---
     "eslint.validate": [
         "javascript",
         "typescript",
-        "vue"
+        "vue",
+        "yaml",
+        "markdown",
+        "dockerfile"
     ],
-    // --- Editor consistency ---
+    "eslint.alwaysShowStatus": true,
+    // --- Consistency ---
     "editor.tabSize": 2,
     "editor.insertSpaces": true,
     "files.eol": "\n",
     "files.trimTrailingWhitespace": true,
     "files.insertFinalNewline": true,
-    // --- Enforce Prettier as formatter for these languages ---
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[typescript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[typescriptreact]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[vue]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    // --- Use project TS version ---
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "files.associations": {
+        "Dockerfile*": "dockerfile",
+        "*.yml": "yaml",
+        "*.yaml": "yaml"
     }
 }
